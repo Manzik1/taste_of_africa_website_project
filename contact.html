@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Tastes of Africa</title>
+  <meta name="description" content="Get in touch with Tastes of Africa. Send us your questions, recipe suggestions, or feedback about African food culture." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Tastes <span>of Africa</span></a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="contact-hero">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>
+        Have a question, a recipe to share, or just want to say hello?
+        We'd love to hear from you.
+      </p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <div>
+          <form id="contact-form" class="contact-form" novalidate aria-label="Contact form">
+
+            <h2 class="contact-form-heading">Send Us a Message</h2>
+
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                placeholder="Your full name"
+                required
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                placeholder="your@email.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-country">Select Your Country</label>
+              <select id="contact-country" name="country">
+                <option value="">Choose your country...</option>
+                <option value="Rwanda">Rwanda</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Ghana">Ghana</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="other-country">Other Country (Optional)</label>
+              <input
+                type="text"
+                id="other-country"
+                name="other-country"
+                list="country-list"
+                placeholder="Type or select another country..."
+              />
+
+              <datalist id="country-list">
+                <option value="Senegal"></option>
+                <option value="Ivory Coast"></option>
+                <option value="United Kingdom"></option>
+                <option value="United States"></option>
+                <option value="Canada"></option>
+                <option value="Australia"></option>
+                <option value="Germany"></option>
+                <option value="France"></option>
+                <option value="Netherlands"></option>
+              </datalist>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <select id="contact-subject" name="subject">
+                <option value="">Select a subject...</option>
+                <option value="recipe">Recipe Question or Suggestion</option>
+                <option value="collaboration">Collaboration or Partnership</option>
+                <option value="feedback">Website Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                placeholder="Write your message here (at least 20 characters)..."
+                required
+                minlength="21"
+                rows="6"
+              ></textarea>
+
+              <span class="form-error" id="msg-error" role="alert"></span>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-primary contact-submit"
+              id="form-submit"
+            >
+              Send Message
+            </button>
+
+          </form>
+
+          <div
+            class="form-confirmation"
+            id="form-confirm"
+            role="status"
+            aria-live="polite"
+            hidden
+          >
+            <h3>✅ Message Sent!</h3>
+            <p id="confirm-text">
+              Thank you for contacting Tastes of Africa. We appreciate your message!
+            </p>
+          </div>
+
+        </div>
+
+        <aside>
+          <div class="contact-info-box">
+            <h3>Contact Information</h3>
+
+            <div class="info-item">
+              <span class="info-icon">📧</span>
+              <div>
+                <strong class="info-label">Email</strong>
+                <p>hello@tastesofafrica.com</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icon">🌍</span>
+              <div>
+                <strong class="info-label">Based in</strong>
+                <p>
+                  Cape Town, South Africa<br />
+                  with contributors across the continent
+                </p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icon">🕒</span>
+              <div>
+                <strong class="info-label">Response Time</strong>
+                <p>We typically reply within 1–2 business days.</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icon">📸</span>
+              <div>
+                <strong class="info-label">Share Your Recipes</strong>
+                <p>
+                  Got a family recipe from your region?
+                  We'd love to feature it. Send us a message!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-wrapper contact-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105226.8!2d18.4241!3d-33.9249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc500f8826eed7%3A0x687fe1fc2828498f!2sCape%20Town%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1699900000000"
+              title="Cape Town, South Africa — location of Tastes of Africa"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <span class="nav-logo">Tastes <span>of Africa</span></span>
+          <p>Celebrating the rich diversity of African food culture.</p>
+        </div>
+
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="regions.html">Regions</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Regions</h4>
+          <ul>
+            <li><a href="region-west.html">West Africa</a></li>
+            <li><a href="region-east.html">East Africa</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Newsletter</h4>
+          <p class="newsletter-description">
+            Get new recipes in your inbox.
+          </p>
+
+          <form
+            class="newsletter-form"
+            id="newsletter-form"
+            novalidate
+            aria-label="Newsletter signup"
+          >
+            <input
+              type="email"
+              name="newsletter-email"
+              placeholder="Your email address"
+              aria-label="Email address"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Tastes of Africa.
+          Crafted with passion for African food culture.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

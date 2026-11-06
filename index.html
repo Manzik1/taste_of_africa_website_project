@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tastes of Africa | African Food and Recipes</title>
+  <meta name="description" content="Discover African dishes, traditional ingredients, cooking methods and food cultures from East and West Africa.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Tastes <span>of Africa</span></a>
+
+      <button class="nav-toggle" id="nav-toggle"
+        aria-label="Toggle navigation"
+        aria-controls="nav-links"
+        aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Homepage introduction -->
+  <header class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <h1>A Journey Through Africa's Flavours</h1>
+      <p>
+        Discover the foods enjoyed across Africa, from Rwanda's cassava leaf
+        dishes and flour-based staples to West Africa's tomato-rich rice dishes.
+        Learn about the ingredients, cooking methods and traditions behind them.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="recipes.html" class="btn btn-primary">Browse Recipes</a>
+        <a href="#featured" class="btn btn-outline">Explore Dishes</a>
+      </div>
+
+      <div class="hero-video">
+        <div class="video-wrapper">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/1zyDUkdVZ0E?si=cJLZMVnEvw1oaXay"
+            title="African food and cooking traditions"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Featured dishes -->
+  <section class="section" id="featured">
+    <div class="container">
+      <h2 class="section-title">Featured Dishes</h2>
+
+      <div class="filter-bar" role="group" aria-label="Filter recipes by region">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="west-africa">West Africa</button>
+        <button class="filter-btn" data-filter="east-africa">East Africa</button>
+      </div>
+
+      <div class="grid-4" id="recipe-grid">
+
+        <article class="card recipe-card" data-region="west-africa">
+          <figure>
+            <img src="images/jollof-rice.jpg"
+              alt="Jollof rice served with fried plantain"
+              class="card-img" loading="lazy">
+
+            <figcaption class="card-body">
+              <span class="card-tag">West Africa</span>
+              <h3>Jollof Rice</h3>
+              <p>
+                Jollof Rice is cooked in a rich sauce of tomatoes, onions,
+                peppers and spices. It is popular in countries such as
+                Nigeria, Ghana and Senegal, where different versions are enjoyed.
+              </p>
+
+              <div class="card-actions">
+                <a href="recipe-jollof.html" class="btn btn-primary btn-small">
+                  View Recipe
+                </a>
+                <button class="btn-fav" data-id="jollof">🤍 Favorite</button>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="card recipe-card" data-region="east-africa">
+          <figure>
+            <img src="images/isombe.jpg"
+              alt="Traditional Rwandan Isombe"
+              class="card-img" loading="lazy">
+
+            <figcaption class="card-body">
+              <span class="card-tag">East Africa</span>
+              <h3>Isombe</h3>
+              <p>
+                Isombe is a Rwandan dish made from cassava leaves that are
+                cooked until soft and often mixed with groundnuts.
+                It is commonly eaten with beans, rice or a flour-based staple.
+              </p>
+
+              <div class="card-actions">
+                <a href="recipe-isombe.html" class="btn btn-primary btn-small">
+                  View Recipe
+                </a>
+                <button class="btn-fav" data-id="isombe">🤍 Favorite</button>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="card recipe-card" data-region="east-africa">
+          <figure>
+            <img src="images/ubugari.jpg"
+              alt="Traditional Rwandan Ubugari"
+              class="card-img" loading="lazy">
+
+            <figcaption class="card-body">
+              <span class="card-tag">East Africa</span>
+              <h3>Ubugari</h3>
+              <p>
+                Ubugari is a firm Rwandan staple prepared by mixing cassava
+                flour with hot water and stirring until smooth. It is usually
+                served alongside vegetables, beans or sauces.
+              </p>
+
+              <div class="card-actions">
+                <a href="recipe-ubugari.html" class="btn btn-primary btn-small">
+                  View Recipe
+                </a>
+                <button class="btn-fav" data-id="ubugari">🤍 Favorite</button>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="card recipe-card" data-region="east-africa">
+          <figure>
+            <img src="images/kawunga.jpg"
+              alt="Traditional East African Kawunga"
+              class="card-img" loading="lazy">
+
+            <figcaption class="card-body">
+              <span class="card-tag">East Africa</span>
+              <h3>Kawunga</h3>
+              <p>
+                Kawunga is a maize flour dish prepared by gradually mixing
+                flour into boiling water while stirring. It becomes thick
+                and is often eaten with beans, vegetables or meat.
+              </p>
+
+              <div class="card-actions">
+                <a href="recipe-kawunga.html" class="btn btn-primary btn-small">
+                  View Recipe
+                </a>
+                <button class="btn-fav" data-id="kawunga">🤍 Favorite</button>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Explore regions -->
+  <section class="section region-section" id="regions">
+    <div class="container">
+      <h2 class="section-title">Explore by Region</h2>
+
+      <p class="text-center">
+        Food traditions differ across Africa. Local crops, climate and
+        cultural practices influence the ingredients and cooking methods
+        used in each region.
+      </p>
+
+      <div class="region-links">
+
+        <a href="region-west.html" class="region-card">
+          <span class="region-icon">🌶️</span>
+          <span class="region-name">West Africa</span>
+          <span>Ghana, Nigeria, Senegal</span>
+        </a>
+
+        <a href="region-east.html" class="region-card">
+          <span class="region-icon">☕</span>
+          <span class="region-name">East Africa</span>
+          <span>Rwanda, Ethiopia, Kenya, Tanzania</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Food stories -->
+  <section class="section" id="trends">
+    <div class="container">
+      <h2 class="section-title">Food Stories</h2>
+
+      <div class="grid-3">
+
+        <article class="news-item">
+          <span class="card-tag">West Africa</span>
+          <h3>Jollof Rice and Its Regional Variations</h3>
+          <p>
+            Jollof Rice is prepared in several West African countries.
+            Although the recipes differ, tomatoes, peppers, onions and
+            spices give the dish its familiar colour and flavour.
+          </p>
+        </article>
+
+        <article class="news-item">
+          <span class="card-tag">East Africa</span>
+          <h3>Isombe in Rwandan Meals</h3>
+          <p>
+            Cassava leaves are the main ingredient in Isombe.
+            They are cooked until tender and may be combined with
+            groundnuts to make a rich dish served with other staples.
+          </p>
+        </article>
+
+        <article class="news-item">
+          <span class="card-tag">East Africa</span>
+          <h3>Rwanda's Everyday Staples</h3>
+          <p>
+            Ubugari, Kawunga and Amateke show how cassava, maize
+            and taro are used in Rwandan cooking. These foods are
+            often served with vegetables, beans and sauces.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <span class="nav-logo">Tastes <span>of Africa</span></span>
+          <p>
+            Celebrating African food traditions, ingredients and recipes,
+            one dish at a time.
+          </p>
+        </div>
+
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="regions.html">Regions</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Regions</h4>
+          <ul>
+            <li><a href="region-west.html">West Africa</a></li>
+            <li><a href="region-east.html">East Africa</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Newsletter</h4>
+          <p>Get new recipes and food stories in your inbox.</p>
+
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" placeholder="Your email address"
+              aria-label="Email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Tastes of Africa. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
