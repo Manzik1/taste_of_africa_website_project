@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amateke Recipe | Taste of Africa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">Taste of Africa</a>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation">
+            ☰
+        </button>
+
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="regions.html">Regions</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Recipe introduction -->
+        <section class="recipe-hero">
+            <p class="breadcrumb">
+                <a href="index.html">Home</a> /
+                <a href="recipes.html">Recipes</a> /
+                Amateke
+            </p>
+
+            <h1>Amateke</h1>
+
+            <p>
+                Amateke is a traditional Rwandan dish made from taro roots.
+                The roots are peeled, cleaned and cooked until tender. They
+                are often served as a filling side dish with vegetables,
+                beans or a sauce.
+            </p>
+
+            <img
+                src="images/amateke.jpg"
+                alt="Cooked traditional Amateke taro roots"
+                class="recipe-img"
+            >
+        </section>
+
+        <!-- Recipe details -->
+        <section class="section recipe-layout">
+            <div class="recipe-main">
+                <h2>About This Dish</h2>
+
+                <p>
+                    Amateke is enjoyed in Rwanda and is prepared in different
+                    ways depending on the household. Taro is valued as a
+                    filling root vegetable and can be boiled until soft
+                    before serving.
+                </p>
+
+                <h2>Ingredients</h2>
+
+                <ul id="ingredient-list" data-original-servings="4">
+                    <li>
+                        <span data-base-quantity="1" data-unit="kg">
+                            1 kg
+                        </span>
+                        fresh taro roots
+                    </li>
+                    <li>
+                        <span data-base-quantity="5" data-unit="cups">
+                            5 cups
+                        </span>
+                        water (or enough to cover the roots)
+                    </li>
+                    <li>Salt to taste (optional)</li>
+                    <li>Vegetables or sauce for serving (optional)</li>
+                </ul>
+
+                <h2>Preparation Steps</h2>
+
+                <ol>
+                    <li>Wash the taro roots to remove dirt.</li>
+                    <li>
+                        Peel the roots carefully and cut large pieces into
+                        smaller, even-sized portions.
+                    </li>
+                    <li>Place the pieces in a cooking pot.</li>
+                    <li>
+                        Add enough water to cover them and add salt if desired.
+                    </li>
+                    <li>
+                        Bring the water to a boil, then cook until the taro
+                        is completely tender.
+                    </li>
+                    <li>
+                        Drain the water and serve the cooked taro warm.
+                    </li>
+                </ol>
+
+                <h2>Serving Suggestions</h2>
+
+                <p>
+                    Amateke can be served with beans, vegetables or a sauce.
+                    Make sure the taro is fully cooked before eating.
+                </p>
+            </div>
+
+            <!-- Recipe sidebar -->
+            <aside class="recipe-sidebar">
+                <div class="sidebar-box">
+                    <h3>Recipe Information</h3>
+
+                    <ul class="recipe-info-list">
+                        <li><strong>Country:</strong> Rwanda</li>
+                        <li><strong>Main ingredient:</strong> Taro roots</li>
+                        <li><strong>Preparation time:</strong> 15 minutes</li>
+                        <li><strong>Cooking time:</strong> 25–35 minutes</li>
+                        <li><strong>Servings:</strong> 4 people</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>Adjust Servings</h3>
+
+                    <div class="servings-control">
+                        <label for="serving-count">Number of servings:</label>
+                        <input
+                            type="number"
+                            id="serving-count"
+                            value="4"
+                            min="1"
+                            max="20"
+                        >
+                    </div>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>About Amateke</h3>
+
+                    <p class="sidebar-description">
+                        Amateke is a traditional root-based food that can be
+                        enjoyed as part of a meal with other local dishes.
+                    </p>
+
+                    <button
+                        class="btn-fav btn-fav-full"
+                        data-id="amateke"
+                        type="button"
+                    >
+                        Add to Favorites
+                    </button>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Taste of Africa. Celebrating African food and culture.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

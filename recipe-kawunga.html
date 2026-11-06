@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawunga Recipe | Taste of Africa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">Taste of Africa</a>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation">
+            ☰ 
+        </button>
+
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="regions.html">Regions</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Recipe introduction -->
+        <section class="recipe-hero">
+            <p class="breadcrumb">
+                <a href="index.html">Home</a> /
+                <a href="recipes.html">Recipes</a> /
+                Kawunga
+            </p>
+
+            <h1>Kawunga</h1>
+
+            <p>
+                Kawunga is a simple East African staple made by cooking maize
+                flour in boiling water and stirring until it becomes thick
+                and firm. It is commonly served with beans, vegetables or
+                meat sauce.
+            </p>
+
+            <img
+                src="images/kawunga.jpg"
+                alt="A serving of traditional Kawunga"
+                class="recipe-img"
+            >
+        </section>
+
+        <!-- Recipe details -->
+        <section class="section recipe-layout">
+            <div class="recipe-main">
+                <h2>About This Dish</h2>
+
+                <p>
+                    Kawunga is enjoyed in Rwanda and other parts of East Africa.
+                    It is affordable, filling and easy to prepare. The dish is
+                    usually eaten with a sauce or stew to make a complete meal.
+                </p>
+
+                <h2>Ingredients</h2>
+
+                <ul id="ingredient-list" data-original-servings="4">
+                    <li>
+                        <span data-base-quantity="2" data-unit="cups">
+                            2 cups
+                        </span>
+                        maize flour
+                    </li>
+                    <li>
+                        <span data-base-quantity="3" data-unit="cups">
+                            3 cups
+                        </span>
+                        water
+                    </li>
+                    <li>Salt (optional)</li>
+                </ul>
+
+                <p class="ingredient-note">
+                    You can serve Kawunga with beans, vegetables or your
+                    preferred stew.
+                </p>
+
+                <h2>Preparation Steps</h2>
+
+                <ol>
+                    <li>Bring the water to a boil in a cooking pot.</li>
+                    <li>Add a little maize flour while stirring.</li>
+                    <li>
+                        Gradually add the remaining flour and continue
+                        stirring to prevent lumps.
+                    </li>
+                    <li>
+                        Keep stirring until the mixture becomes thick and
+                        pulls away from the sides of the pot.
+                    </li>
+                    <li>
+                        Cook for a few more minutes, then shape and serve warm.
+                    </li>
+                </ol>
+
+                <h2>Serving Suggestions</h2>
+
+                <p>
+                    Serve Kawunga with cooked beans, leafy vegetables or a
+                    tomato-based meat sauce.
+                </p>
+            </div>
+
+            <!-- Recipe sidebar -->
+            <aside class="recipe-sidebar">
+                <div class="sidebar-box">
+                    <h3>Recipe Information</h3>
+
+                    <ul class="recipe-info-list">
+                        <li><strong>Region:</strong> East Africa</li>
+                        <li><strong>Main ingredient:</strong> Maize flour</li>
+                        <li><strong>Preparation time:</strong> 5 minutes</li>
+                        <li><strong>Cooking time:</strong> 20 minutes</li>
+                        <li><strong>Servings:</strong> 4 people</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>Adjust Servings</h3>
+
+                    <div class="servings-control">
+                        <label for="serving-count">Number of servings:</label>
+                        <input
+                            type="number"
+                            id="serving-count"
+                            value="4"
+                            min="1"
+                            max="20"
+                        >
+                    </div>
+                </div>
+
+                <div class="sidebar-box">
+                    <h3>About Kawunga</h3>
+
+                    <p class="sidebar-description">
+                        Kawunga is a filling maize-based dish that is often
+                        enjoyed as part of a meal with vegetables or sauce.
+                    </p>
+
+                    <button
+                        class="btn-fav btn-fav-full"
+                        data-id="kawunga"
+                        type="button"
+                    >
+                        Add to Favorites
+                    </button>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Taste of Africa. Celebrating African food and culture.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
